@@ -1,0 +1,11 @@
+<!-- billgatesbooks.jl.html -->
+<h1>the most popular $(length(cards)) cards</h1>
+<ul>
+  <% for_each(cards) do card %>
+    <li>
+        <image src="$(card.image)">
+        <h3>$(card.name)</h3>
+        <p>$(card.description)</p>
+    </li>
+  <% end %>
+</ul>
